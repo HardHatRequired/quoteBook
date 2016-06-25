@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="quoteApp16-06-02">
+  <head>
+    <meta charset="utf-8">
+    <title>Quote Book</title>
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+  </head>
+  <body ng-controller="mainCtrl">
+    <h1></h1>
+    <div class="container">
+      <div class="cards">
+        <input type="text" name="name" placeholder="Quote..." ng-model="newQuote">
+        <input type="text" name="name" placeholder="Author" ng-model="newAuthor">
+        <button type="button" name="quoteButton" ng-click="addQuote()">Add Quote</button>
+      </div>
+
+
+      <div class="cards" ng-repeat="quote in quoteArr">
+        <h3 class="quote">"{{quote.text}}"</h3>
+        <h3 class="author">{{quote.author}}</h2>
+      </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/mainCtrl.js"></script>
+    <script src="app/dataService.js"></script>
+  </body>
+</html>

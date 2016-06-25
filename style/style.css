@@ -1,0 +1,25 @@
+body {
+  background-color: white;
+}
+
+.container {
+  background-color: rgb(246, 255, 251);
+}
+
+.cards {
+  border-style: solid;
+  border-top-color: rgb(246, 255, 251);
+  border-bottom-color: rgb(179, 179, 179);
+  border-left-color: rgb(179, 179, 179);
+  border-right-color: rgb(179, 179, 179);
+  background-color: rgb(246, 255, 251);
+  border-radius: 10px;
+  height: 100%;
+  margin: 10px;
+  box-shadow: 0px 5px rgb(179, 179, 179);
+  /*rgb(179, 179, 179)*/
+}
+
+.author {
+  color: grey;
+}
